@@ -1,41 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>week4</title>
+  <meta charset="UTF-8">
+  <title>설문지 만들기</title>
 </head>
 <body>
-    <ol>
-        <li>안녕 날 소개하지</li>
-        <li>이름 김하온</li>
-        <li>직업은 traveler</li>
-    </ol>
-    <ul style="list-style: circle;">
-        <li>hi</li>
-        <li>hello</li>
-        <li>bonjour</li>
-    </ul>
-    <dl>
-        <dt>Coffee</dt>
-        <dd>Black hot drink</dd>
-        <dt>Milk</dt>
-        <dd>WHite cold drink</dd>
-    </dl>
-    <table border="1" style="width: 50%; text-align: center;">
-        <caption>2025 Ballondor</caption>
-        <thead>
-            <tr><th>rank</th><th>name</th><th>image</th></tr>
-        </thead>
-        <tfoot>
-            <tr><td colspan="3">2025 Ballondor top 3</td></tr>
-        </tfoot>
-        <tbody>
-            <tr><td>1</td><td>ousmane dembele</td><td><img src="img/dembelee.jpg" width="100px" height="100px"></td></tr>
-            <tr><td>2</td><td>lamine yamal</td><td><img src="img/yamal.jpg" width="100px" height="100px"></td></tr>
-            <tr><td>3</td><td>vithina</td><td><img src="img/vithina.jpg" width="100px" height="100px"></td></tr>
-        </tbody>
-    </table>
+  <h1>설문지 만들기</h1>
 
+  <form>
+    <fieldset>
+      <legend>설문지</legend>
+      <p>1학년 약학 전공에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</p>
+
+      <p>
+        학년 
+        <input type="radio" name="grade" value="1학년">1학년
+        <input type="radio" name="grade" value="2학년">2학년
+        <input type="radio" name="grade" value="3학년">3학년
+        <input type="radio" name="grade" value="4학년">4학년
+        <input type="radio" name="grade" value="5학년">5학년
+        <input type="radio" name="grade" value="6학년">6학년
+      </p>
+
+      <p>
+        성별 
+        <input type="radio" name="gender" value="남">남
+        <input type="radio" name="gender" value="여">여
+      </p>
+
+      <p>
+        관심 전공과목
+        <select name="subject">
+          <option>약학일반생물학</option>
+          <option>약학일반화학</option>
+          <option>약학용어</option>
+          <option>약학개론</option>
+        </select>
+      </p>
+
+      <p>
+        진로<br>
+        <input type="checkbox" name="career" value="개국약사"> 개국약사
+        <input type="checkbox" name="career" value="페이약사"> 페이약사
+        <input type="checkbox" name="career" value="병원약사"> 병원약사
+        <input type="checkbox" name="career" value="연구원"> 연구원
+      </p>
+
+      <p>
+        남기고 싶은 말<br>
+        <textarea rows="5" cols="50" placeholder="글을 남겨주세요"></textarea>
+      </p>
+    </fieldset>
+  </form>
 </body>
 </html>
